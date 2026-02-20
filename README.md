@@ -53,7 +53,7 @@ npx prisma db seed
 npm run dev
 ```
 
-## API Endpoints
+## 📡 API Endpoints
 
 ### 1. Get All Products
 GET `/api/products`
@@ -63,7 +63,7 @@ Retrieves a list of all smartphones, their descriptions, and nested variant data
 GET `/api/products/[slug]`
 Fetches full details for a specific device.
 
-Example response for `/api/products`:
+* Example response for `/api/products`:
 ```bash
 [
     {
@@ -112,7 +112,7 @@ Example response for `/api/products`:
 ]
 ```
 
-Example Response for `/api/products/iphone-17-pro`:
+* Example Response for `/api/products/iphone-17-pro`:
 ```bash 
 {
   "id": "p1",
