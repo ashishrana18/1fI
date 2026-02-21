@@ -25,6 +25,7 @@ Follow these steps to get the project running locally.
 ```bash
 git clone [https://github.com/your-username/1fI.git](https://github.com/your-username/1fI.git)
 cd 1fI
+npm install
 ```
 
 ### 2. Configure Environment Variables
