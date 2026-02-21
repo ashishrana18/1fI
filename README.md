@@ -23,7 +23,7 @@ Follow these steps to get the project running locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/1fI.git](https://github.com/your-username/1fI.git)
+gh repo clone ashishrana18/1fI
 cd 1fI
 npm install
 ```
