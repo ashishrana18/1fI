@@ -35,11 +35,13 @@ export default function ProductsGrid() {
     <div>
       {/* Product Grid */}
       <main className="max-w-7xl mx-auto px-6 pt-8 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => {
-            const minPrice = Math.min(
-              ...product.variants.map((v) => v.currentPrice)
-            );
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
+          {products &&
+            products.length > 0 &&
+            products.map((product) => {
+              const minPrice = Math.min(
+                ...product.variants.map((v) => v.currentPrice)
+              );
 
             return (
               <Link
@@ -115,6 +117,11 @@ export default function ProductsGrid() {
             );
           })}
         </div>
+        {products && products.length === 0 && (
+          <p className="text-2xl font-bold mt-5 text-center mx-auto justify-center items-center text-gray-500">
+            No products found
+          </p>
+        )}
       </main>
     </div>
   );

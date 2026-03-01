@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import prisma from "../../../../lib/prisma";
 
 export async function GET(request, { params }) {
-  // In Next.js 15/16, params is a Promise, so we 'await' it
   const { slug } = await params;
 
   try {
@@ -13,7 +12,7 @@ export async function GET(request, { params }) {
           include: {
             emiPlans: {
               orderBy: {
-                tenureMonths: "asc" // Ensures plans are listed from 3 to 60 months
+                tenureMonths: "asc"
               }
             }
           }
